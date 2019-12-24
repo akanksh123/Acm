@@ -13,11 +13,11 @@ ACM NMAMIT | Home
         <div class="intro-vert intro-vert-right animated fadeInLeft" style="animation-delay: 4s">
             HAPTER
         </div>
+        <div class="text-center text-white" style="padding-top: 25em;">
+            <a href="#about" class="text-white">SCROLL DOWN <div class="text-center"><i class="fa fa-angle-down"
+                        style="font-size: 42px"></i></div></a>
+        </div>
         <div class="wave">
-            <div class="text-center text-white">
-                <a href="#about" class="text-white">SCROLL DOWN <div class="text-center"><i class="fa fa-angle-down"
-                            style="font-size: 42px"></i></div></a>
-            </div>
         </div>
     </div>
 </section>
@@ -54,13 +54,15 @@ ACM NMAMIT | Home
 <div style="margin-top: 5em"></div>
 
 <div class="bgimg-1">
+    <div class="caption">
+        <span class="border">OUR INITIATIVES</span>
+    </div>
 </div>
 
 <!--features-->
-<section style="padding : 9em;">
-    <div class="container">
+<section>
+    <div class="container initiatives" style="padding : 9em;">
         <div class="row">
-
             <div class="col-md-3 col-sm-6">
                 <div data-aos="fade-up" style="animation-delay: 1s">
                     <div class="h-caption">
@@ -134,8 +136,7 @@ ACM NMAMIT | Home
 
 <div class="bgimg-3">
     <div class="caption">
-        <span class="border" style="background-color:transparent;font-size:25px;color: white;">SNEAK
-            PEAK</span>
+        <span class="border">SNEAK PEAK</span>
     </div>
 </div>
 
@@ -143,7 +144,7 @@ ACM NMAMIT | Home
 <section id="peak">
     <div class="container">
         <div class="card-columns">
-            <div class="card p-3" data-aos="flip-up" style="animation-delay: 2s">
+            <div class="card p-3 sneak-peak-img" data-aos="flip-up" style="animation-delay: 2s">
                 <blockquote class="blockquote mb-0 card-body">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
                     </p>
@@ -154,7 +155,7 @@ ACM NMAMIT | Home
                     </footer>
                 </blockquote>
             </div>
-            <div class="card  text-center p-3" data-aos="flip-right" style="animation-delay: 3s">
+            <div class="card text-center p-3" data-aos="flip-right" style="animation-delay: 3s">
                 <blockquote class="blockquote mb-0">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat.</p>
                     <footer class="blockquote-footer">

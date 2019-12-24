@@ -85,11 +85,11 @@
   {
     position: absolute;
     width:100%;
-    height:143px;
+    height:142px;
     bottom:0;
     left:0;
     background:url('/images/wave.png');
-    animation : animate 10s linear infinite;
+    animation : animate 20s linear infinite;
   }
   
   @keyframes animate
@@ -100,7 +100,7 @@
     }
     100%
     {
-      background-position: 500px;
+      background-position: 1360px;
     }
   }
   
@@ -157,20 +157,31 @@
     width: 100%;
     text-align: center;
     color: #000;
+    text-shadow: 2px 2px black;
   }
   
   .caption span.border {
-    background-color: #111;
+    background-color: rgb(17, 17, 17, 0.5);
     color: #fff;
     padding: 18px;
     font-size: 25px;
     letter-spacing: 10px;
+    border: 2px solid #dee2e6!important;
   }
   
   /* Turn off parallax scrolling for tablets and phones */
   @media only screen and (max-device-width: 1024px) {
     .bgimg-1, .bgimg-2, .bgimg-3 {
         background-attachment: scroll;
+    }
+
+    .initiatives {
+      padding: 2em !important;
+    }
+
+    #footer {
+      border-top-right-radius: 0% !important;
+      border-top-left-radius: 0% !important;
     }
   }
   
@@ -354,3 +365,7 @@
     
   }
   
+.sneak-peak-img {
+  background-image: url('/images/poster1.jpg');
+  background-size: cover;
+}
