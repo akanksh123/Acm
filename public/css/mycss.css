@@ -1,0 +1,356 @@
+#loader{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: white url('/images/loader.gif') no-repeat center;
+    z-index: 999999;
+  }
+  
+  html
+  {
+      scroll-behavior: smooth;
+      font-family: 'Poppins', sans-serif !important;
+  }
+  
+  .navbar
+  {
+     box-shadow:none !important;
+  }
+  
+  .navbar-default
+  {
+      background-color: rgba(0,0,0, .5);
+      color:white;
+  }
+  
+  .dropbox
+  {
+      width:50em !important;
+  }
+  
+  
+  
+  
+  @media screen and (max-width:660px)
+  {
+      .dropbox
+      {
+          width:100% !important;
+      }
+  
+      
+      #about
+      {
+          padding-top:2rem;
+      }
+  
+      #events
+      {
+        height: 30%;
+        border-radius:0 0 50% 20%;
+      }
+  }
+  
+  .dropdown-item.active, .dropdown-item:active
+  {
+    color:#212529;
+  }
+  
+  .dropdown-item:focus, .dropdown-item:hover
+  {
+    background:powderblue;
+  }
+  
+  #about,#peak
+  {
+      padding-top:3rem;
+  }
+  
+  #team
+  {
+      padding-top: 4rem;
+  }
+  
+  #acm_anim
+  {
+    position: relative;
+    height: 85vh;
+    width:100%;
+    padding-top: 2.5rem;
+    /* background:linear-gradient(45deg,#43cea2 , #185a9d); */
+    background-color: #3498DB ;
+  }
+  
+  .wave
+  {
+    position: absolute;
+    width:100%;
+    height:143px;
+    bottom:0;
+    left:0;
+    background:url('/images/wave.png');
+    animation : animate 10s linear infinite;
+  }
+  
+  @keyframes animate
+  {
+    0%
+    {
+      background-position: 0;
+    }
+    100%
+    {
+      background-position: 500px;
+    }
+  }
+  
+  .abt
+  {
+      font-weight: bold;
+      color: #3D155F;
+  }
+  
+  .h-caption {
+      text-align: center;
+  }
+  .h-caption i {
+      display: block;
+      font-size: 54px;
+      margin-bottom: 36px;
+  }
+  
+  .highlight {
+    background: url('https://andyhooke.co.uk/wp-content/uploads/2018/02/yellow-brushstroke.png');
+    background-repeat: no-repeat;
+    background-size: 100% 95%;
+    padding: 8px 0;
+  }
+  
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    position: relative;
+    opacity: 0.65;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .bgimg-1 {
+    background-image: url('/images/bgimg-1.jpg');
+    min-height: 500px;
+  }
+  
+  .bgimg-2 {
+    background-image: url('/images/car2.jpg');
+    min-height: 400px;
+  }
+  
+  .bgimg-3 {
+    background-image: url('/images/bgimg-3.jpg');
+    min-height: 500px;
+  }
+  
+  .caption {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+  }
+  
+  .caption span.border {
+    background-color: #111;
+    color: #fff;
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 10px;
+  }
+  
+  /* Turn off parallax scrolling for tablets and phones */
+  @media only screen and (max-device-width: 1024px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+        background-attachment: scroll;
+    }
+  }
+  
+  #footer
+  {
+       margin-top: 2rem;
+       padding-top : 5em;
+       background-color:#3498DB;
+       border-top-right-radius: 90%;
+       border-top-left-radius: 90%;
+  }
+  
+  .pad
+  {
+      padding:10px;
+  }
+  
+  .hovereffect {
+      width: 100%;
+      height: relative;
+      float: left;
+      overflow: hidden;
+      position: relative;
+      text-align: center;
+      cursor: default;
+      background: #42b078;
+    }
+    
+    .hovereffect .overlay {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      overflow: hidden;
+      top: 0;
+      left: 0;
+      padding: 50px 20px;
+    }
+    
+    .hovereffect img {
+      display: block;
+      position: relative;
+      max-width: none;
+      width: calc(100% + 20px);
+      -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+      transition: opacity 0.35s, transform 0.35s;
+      -webkit-transform: translate3d(-10px,0,0);
+      transform: translate3d(-10px,0,0);
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+    }
+    
+    .hovereffect:hover img {
+      opacity: 0.4;
+      filter: alpha(opacity=40);
+      -webkit-transform: translate3d(0,0,0);
+      transform: translate3d(0,0,0);
+    }
+    
+    .hovereffect h2 {
+      text-transform: uppercase;
+      color: #fff;
+      text-align: center;
+      position: relative;
+      font-size: 17px;
+      overflow: hidden;
+      padding: 0.5em 0;
+      background-color: transparent;
+    }
+    
+    .hovereffect h2:after {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background: #fff;
+      content: '';
+      -webkit-transition: -webkit-transform 0.35s;
+      transition: transform 0.35s;
+      -webkit-transform: translate3d(-100%,0,0);
+      transform: translate3d(-100%,0,0);
+    }
+    
+    .hovereffect:hover h2:after {
+      -webkit-transform: translate3d(0,0,0);
+      transform: translate3d(0,0,0);
+    }
+    
+    .hovereffect a, .hovereffect p {
+      color: #FFF;
+      opacity: 0;
+      filter: alpha(opacity=0);
+      -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+      transition: opacity 0.35s, transform 0.35s;
+      -webkit-transform: translate3d(100%,0,0);
+      transform: translate3d(100%,0,0);
+    }
+    
+    .hovereffect:hover a, .hovereffect:hover p {
+      opacity: 1;
+      filter: alpha(opacity=100);
+      -webkit-transform: translate3d(0,0,0);
+      transform: translate3d(0,0,0);
+    }
+  
+  .intro
+  {
+    position: absolute;;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size:6rem;
+    font-family: sans-serif;
+    color:white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  }
+  
+  .intro-vert
+  {
+    position: absolute;
+    font-weight: bold;
+    font-size:6rem;
+    font-family: sans-serif;
+    margin-left:1.6em;
+    padding-top:1em;
+    color:#DF678C;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  }
+  
+  .intro-vert-two
+  {
+    padding-top:2em;
+  } 
+  
+  .intro-vert-right
+  {
+   margin-left:2.3em;
+    color:#F0A07C;
+  } 
+  
+  
+   @media screen and (max-width:660px)
+  {
+    .intro
+    {
+    position:absolute;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding-top: 1em;
+    font-size:3rem;
+    }
+  
+    .intro-vert
+    {
+      position:absolute;
+      font-weight: bold;
+      font-size:3rem;
+      margin-left:1.5em;
+      padding-top:2em;
+    }
+  
+    .intro-vert-two
+    {
+      padding-top:3em;
+    }
+  
+    
+    .intro-vert-right
+    {
+      margin-left:2.3em;
+    }
+  
+  }
+  
+  
+  .underline
+  {
+    text-decoration: underline;
+    text-decoration-color: #12114a;
+    text-decoration-skip-ink: inherit;
+    text-underline-position: under;
+    
+  }
+  
