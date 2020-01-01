@@ -28,7 +28,7 @@
     <!--navbar-->
     <div>
         <div class="header">
-            <nav class="navbar navbar-expand-lg navbar-dark fixed-top navbar-default">
+            <nav class="navbar navbar-expand-lg navbar-dark fixed-top  navbar-default" style="@yield('navbar')">
                 <div class="container">
                     <button class="navbar-toggler" type="button" data-toggle="collapse"
                         data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false"
@@ -40,18 +40,19 @@
 
                     <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
                         <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                            <li class="nav-item active">
-                                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                            <li class="nav-item @yield('navbar-active')">
+                                <a class="nav-link" href="{{url('/')}}">Home <span class="sr-only">(current)</span></a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="team.html">Team</a>
+                            <li class="nav-item @yield('navbar-team')">
+                                <a class="nav-link" href="{{url('/team')}}">Team</a>
                             </li>
-                            <li class="nav-item">
+                            <li class="nav-item @yield('navbar-contact')">
                                 <a class="nav-link" href="#footer">Contact</a>
                             </li>
                             <li class="nav-item dropdown ">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
-                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <a class="nav-link dropdown-toggle  @yield('navbar-dropdown')" href="#"
+                                    id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+                                    aria-expanded="false">
                                     Dropdown link
                                 </a>
                                 <div class="dropdown-menu dropbox" aria-labelledby="navbarDropdownMenuLink">
@@ -70,7 +71,7 @@
                                 </div>
                             </li>
                         </ul>
-                        <span class="nav-item dropdown">
+                        {{-- <span class="nav-item dropdown">
                             <a class="navbar-text dropdown-toggle" href="#" id="navbarDropdownMenuLink"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="silver">
                                 Dropdown link
@@ -80,7 +81,7 @@
                                 <a class="dropdown-item" href="#">Another action</a>
                                 <a class="dropdown-item" href="#">Something else here</a>
                             </div>
-                        </span>
+                        </span> --}}
                     </div>
                 </div>
             </nav>
@@ -92,17 +93,17 @@
     <section id="footer">
         <div class="container">
             <div class="row">
-                <div class="col">
+                <div class="col-sm-4 text-center">
                     <img src="/images/acm.png" style="height:100px;width : 100px">
                 </div>
 
-                <div class="col">
+                <div class="col-sm-4 text-center">
                     <i class="fa fa-twitter pad text-white" aria-hidden="true"></i>
                     <i class="fa fa-instagram pad text-white" aria-hidden="true"></i>
                     <i class="fa fa-facebook pad text-white" aria-hidden="true"></i>
                 </div>
 
-                <div class="col">
+                <div class="col-sm-4 text-center">
                     <p class="text-white"> <i class="fa fa-phone" aria-hidden="true"></i> +91 - 8258 - 281039<br>
                         Nitte, Karkala Taluk,<br>
                         Udupi - 574110<br>

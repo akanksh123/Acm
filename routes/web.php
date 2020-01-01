@@ -12,6 +12,8 @@
 */
 
 Route::get('/', 'RouteController@index');
+Route::get('/team', 'RouteController@team');
+Route::get('/events', 'RouteController@events');
 
 Auth::routes();
 

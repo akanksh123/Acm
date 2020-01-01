@@ -2,7 +2,9 @@
 @section('title')
 ACM NMAMIT | Home
 @endsection
-
+@section('navbar-active')
+active
+@endsection
 @section('content')
 <section id="acm_anim">
     <div class="container">
@@ -21,6 +23,8 @@ ACM NMAMIT | Home
         </div>
     </div>
 </section>
+
+
 
 <!--about-->
 <section id="about">

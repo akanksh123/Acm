@@ -171,9 +171,9 @@
   
   /* Turn off parallax scrolling for tablets and phones */
   @media only screen and (max-device-width: 1024px) {
-    .bgimg-1, .bgimg-2, .bgimg-3 {
+    /* .bgimg-1, .bgimg-2, .bgimg-3 {
         background-attachment: scroll;
-    }
+    } */
 
     .initiatives {
       padding: 2em !important;
@@ -182,6 +182,8 @@
     #footer {
       border-top-right-radius: 0% !important;
       border-top-left-radius: 0% !important;
+      margin-bottom : 2em;
+      padding-bottom: 20px;
     }
   }
   
