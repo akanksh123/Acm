@@ -20,4 +20,8 @@ class RouteController extends Controller
     {
         return view('events');
     }
+    public function event1()
+    {
+        return view('eventdetails');
+    }
 }

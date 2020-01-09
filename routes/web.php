@@ -14,7 +14,7 @@
 Route::get('/', 'RouteController@index');
 Route::get('/team', 'RouteController@team');
 Route::get('/events', 'RouteController@events');
-
+Route::get('/event1','RouteController@event1');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');

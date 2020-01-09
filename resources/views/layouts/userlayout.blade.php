@@ -17,6 +17,7 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!--custom css-->
     <link rel="stylesheet" href="{{asset('css/mycss.css')}}">
+    @yield('linking')
     <!--font awesome icons-->
     <script src="https://use.fontawesome.com/7fa0c56c95.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>

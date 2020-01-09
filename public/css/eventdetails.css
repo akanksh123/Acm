@@ -1,0 +1,192 @@
+body {
+    background-color: rgb(187, 251, 253);
+}
+.mysection {
+    width: 95%;
+    margin-left: 2%;
+
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+.description {
+    border: 2px solid #444;
+}
+.img1 {
+    height: 380px;
+    width: 100%;
+    margin-top: 10px;
+}
+.images10 {
+    float: left;
+    padding: 1%;
+}
+
+.images20 {
+    float: right;
+
+    padding: 1%;
+}
+.img2 {
+    height: 380px;
+    margin-top: 10px;
+}
+.images30 {
+    float: left;
+
+    padding: 1%;
+}
+.images40 {
+    float: right;
+
+    padding: 1%;
+}
+.imgsize {
+    width: 550px;
+    height: 350px;
+}
+.workshopdetails {
+    background-color: rgb(69, 211, 250);
+    font-size: 25px;
+    margin-top: 30px;
+    border: 5px solid rgb(52, 116, 255);
+    border-radius: 150px;
+}
+.workshopdetails h1 {
+    text-align: center;
+}
+.workshopdetails p {
+    margin: 10px;
+    padding: 4%;
+}
+@media screen and (max-width: 1350px) {
+    body {
+        background-color: rgb(187, 251, 253);
+    }
+    .mysection {
+        width: 95%;
+        margin-left: 2%;
+
+        margin-top: 15%;
+        margin-bottom: 10%;
+    }
+    .description {
+        border: 3px solid #444;
+    }
+    .img1 {
+        height: 380px;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .img2 {
+        height: 380px;
+        margin-top: 10px;
+    }
+
+    .imgsize {
+        width: 500px;
+        height: 320px;
+    }
+    .workshopdetails {
+        background-color: rgb(69, 211, 250);
+        font-size: 20px;
+        margin-top: 30px;
+        border: 5px solid rgb(52, 116, 255);
+        border-radius: 120px;
+    }
+    .workshopdetails h1 {
+        text-align: center;
+    }
+    .workshopdetails p {
+        margin: 10px;
+        padding: 4%;
+    }
+}
+@media screen and (max-width: 1220px) {
+    body {
+        background-color: rgb(187, 251, 253);
+    }
+    .mysection {
+        width: 95%;
+        margin-left: 2%;
+
+        margin-top: 15%;
+        margin-bottom: 10%;
+    }
+    .description {
+        border: 3px solid #444;
+    }
+    .img1 {
+        height: 700px;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .img2 {
+        height: 700px;
+        margin-top: 10px;
+    }
+
+    .imgsize {
+        width: 500px;
+        height: 320px;
+    }
+    .workshopdetails {
+        background-color: rgb(69, 211, 250);
+        font-size: 20px;
+        margin-top: 30px;
+        border: 5px solid rgb(52, 116, 255);
+        border-radius: 120px;
+    }
+    .workshopdetails h1 {
+        text-align: center;
+    }
+    .workshopdetails p {
+        margin: 10px;
+        padding: 4%;
+    }
+}
+@media screen and (max-width: 615px) {
+    body {
+        background-color: rgb(187, 251, 253);
+    }
+    .mysection {
+        width: 95%;
+        margin-left: 2%;
+
+        margin-top: 15%;
+        margin-bottom: 10%;
+    }
+    .description {
+        border: 3px solid #444;
+    }
+    .img1 {
+        height: 600px;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .img2 {
+        height: 600px;
+        margin-top: 10px;
+    }
+
+    .imgsize {
+        width: 400px;
+        height: 280px;
+    }
+    .workshopdetails {
+        background-color: rgb(69, 211, 250);
+        font-size: 20px;
+        margin-top: 30px;
+        border: 5px solid rgb(52, 116, 255);
+        border-radius: 90px;
+    }
+    .workshopdetails h1 {
+        text-align: center;
+    }
+    .workshopdetails p {
+        margin: 10px;
+        padding: 4%;
+    }
+}
