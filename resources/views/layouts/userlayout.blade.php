@@ -54,19 +54,19 @@
                                 <a class="nav-link dropdown-toggle  @yield('navbar-dropdown')" href="#"
                                     id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
                                     aria-expanded="false">
-                                    Dropdown link
+                                    Events
                                 </a>
                                 <div class="dropdown-menu dropbox" aria-labelledby="navbarDropdownMenuLink">
                                     <div class="row">
                                         <div class="col">
-                                            <a class="dropdown-item" href="#">Action</a>
-                                            <a class="dropdown-item" href="#">Another action</a>
-                                            <a class="dropdown-item" href="#">Something else here</a>
+                                        <a class="dropdown-item" href="{{url('/events')}}">Upcoming Events</a>
+                                            <a class="dropdown-item" href="#">.</a>
+                                            <a class="dropdown-item" href="#">.</a>
                                         </div>
                                         <div class="col">
-                                            <a class="dropdown-item" href="#">Action</a>
-                                            <a class="dropdown-item" href="#">Another action</a>
-                                            <a class="dropdown-item" href="#">Something else here</a>
+                                            <a class="dropdown-item" href="{{url('/events')}}">Events Conducted</a>
+                                            <a class="dropdown-item" href="#">.</a>
+                                            <a class="dropdown-item" href="#">.</a>
                                         </div>
                                     </div>
                                 </div>
@@ -144,11 +144,9 @@
     <script>
         var preloader = document.getElementById('loader');
                 var myVar;
-
                 function myFunc() {
                     myVar = setTimeout(showPage, 1000);
                 }
-
                 function showPage() {
                     preloader.style.opacity = 0;
                     preloader.style.display = "none";

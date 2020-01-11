@@ -3,7 +3,7 @@
 ACM | Events
 @endsection
 @section('linking')
-<link rel="stylesheet" href="{{asset('css/events.css')}}">
+<link rel="stylesheet" href="{{asset('/css/event.css')}}">
 @endsection
 @section('navbar')
 background-color:#3498DB;
@@ -13,10 +13,11 @@ active
 @endsection
 
 @section('content')
+<div class="container">
 <section class="mysection">
       <div class="leftbox">
-        <div class="content">
-          <h1>
+        <div class="content" >
+          <h1 >
             Event Conducted
           </h1>
           <p>
@@ -78,5 +79,6 @@ active
         </ul>
       </div>
     </section>
+</div>
 
 @endsection
