@@ -1,9 +1,8 @@
 .mysection {
-    width: 90%;
-    height: 110vh;
+    width: 95%;
+    height: 130vh;
     margin-top: 10%;
-    margin-left: 5%;
-    background-color: aqua;
+    background-color: white;
 }
 .mysection .leftbox {
     width: 40%;
@@ -35,7 +34,7 @@
     width: 50%;
     height: 100%;
     position: relative;
-    background: rgb(28, 241, 241);
+    background: rgb(155, 202, 233);
     float: right;
     box-sizing: border-box;
 }
@@ -44,15 +43,16 @@
     top: 50%;
     transform: translateY(-50%);
     margin: 0;
-    padding: 30px;
+    padding: 40px;
     box-sizing: border-box;
 }
 .mysection .events ul li {
     list-style: none;
     background: powderblue;
     box-sizing: border-box;
-    height: 220px;
-    margin: 10px 0;
+    height: 150px;
+    width: 500px;
+    margin: 15px 0;
     opacity: 0.8;
     border: 2px solid rgb(8, 108, 126);
 }
@@ -105,7 +105,7 @@
     position: relative;
     margin: 7px 0 0;
     padding: 0;
-    font-size: 16px;
+    font-size: 18px;
 }
 .mysection .events ul li a:hover .details {
     color: black;
@@ -115,7 +115,7 @@
         width: 95%;
         height: 110vh;
         margin-top: 10%;
-        background-color: aqua;
+        background-color: white;
     }
     .mysection .leftbox {
         width: 40%;
@@ -134,7 +134,7 @@
         width: 60%;
         height: 100%;
         position: relative;
-        background: rgb(28, 241, 241);
+        background: rgb(155, 202, 233);
         float: right;
         box-sizing: border-box;
     }
@@ -150,7 +150,8 @@
         list-style: none;
         background: powderblue;
         box-sizing: border-box;
-        height: 200px;
+        height: 150px;
+        width: 450px;
         margin: 15px 0;
         opacity: 0.8;
         border: 2px solid rgb(8, 108, 126);
@@ -176,15 +177,13 @@
         position: absolute;
         margin: 0;
         padding: 0;
-        top: 33%;
-        left: 30%;
+        top: 35%;
+        left: 3%;
         color: white;
-        font-size: 40px;
-        line-height: 20px;
+        font-size: 23px;
+        line-height: 30px;
     }
-    .mysection .events ul li .time h2 span {
-        font-size: 25px;
-    }
+
     .mysection .events ul li .details {
         padding: 20px;
         background: #fff;
@@ -216,13 +215,13 @@
         width: 95%;
         height: 110vh;
         margin-top: 10%;
-        background-color: aqua;
+        background-color: white;
     }
     .mysection .leftbox {
         width: 100%;
-        height: 50%;
+        height: 45%;
 
-        padding: 50px;
+        padding: 10px;
         box-sizing: border-box;
     }
     .mysection .leftbox .content h1 {
@@ -233,15 +232,15 @@
     }
     .mysection .events {
         width: 100%;
-        height: 20%;
+        height: 60%;
         position: relative;
-        background: rgb(28, 241, 241);
-
+        background: rgb(155, 202, 233);
+        margin-top: 10px;
         box-sizing: border-box;
     }
     .mysection .events ul {
         position: absolute;
-        top: 100%;
+        top: 50%;
         transform: translateY(-50%);
         margin: 0;
         padding: 10%;
@@ -253,6 +252,7 @@
         background: powderblue;
         box-sizing: border-box;
         height: 100px;
+        width: 330px;
         margin: 15px 0;
 
         opacity: 0.8;
@@ -260,7 +260,7 @@
     }
     .mysection .events ul li .time {
         position: relative;
-        padding: 20px;
+        padding: 5px;
         background: rgb(33, 136, 136);
         box-sizing: border-box;
         float: left;
@@ -279,15 +279,13 @@
         position: absolute;
         margin: 0;
         padding: 0;
-        top: 23%;
-        left: 30%;
+        top: 35%;
+        left: 2%;
         color: white;
-        font-size: 40px;
+        font-size: 23px;
         line-height: 30px;
     }
-    .mysection .events ul li .time h2 span {
-        font-size: 20px;
-    }
+
     .mysection .events ul li .details {
         padding: 20px;
         background: #fff;

@@ -1,6 +1,4 @@
-body {
-    background-color: rgb(187, 251, 253);
-}
+
 .mysection {
     width: 95%;
     margin-left: 2%;
@@ -59,9 +57,7 @@ body {
     padding: 4%;
 }
 @media screen and (max-width: 1350px) {
-    body {
-        background-color: rgb(187, 251, 253);
-    }
+    
     .mysection {
         width: 95%;
         margin-left: 2%;
@@ -103,9 +99,7 @@ body {
     }
 }
 @media screen and (max-width: 1220px) {
-    body {
-        background-color: rgb(187, 251, 253);
-    }
+    
     .mysection {
         width: 95%;
         margin-left: 2%;
@@ -147,9 +141,7 @@ body {
     }
 }
 @media screen and (max-width: 615px) {
-    body {
-        background-color: rgb(187, 251, 253);
-    }
+   
     .mysection {
         width: 95%;
         margin-left: 2%;

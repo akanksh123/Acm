@@ -24,7 +24,6 @@ CRGBMD INDIA | Events
           <tr>
             <th scope="col">Sl no.</th>
             <th scope="col">Event Name</th>
-            <th scope="col">Event Type</th>
             <th scope="col">Description</th>
             <th scope="col">Event Venue</th>
             <th scope="col">Event Date</th>
@@ -37,7 +36,6 @@ CRGBMD INDIA | Events
 
             <td>{{$loop->iteration}}</td>
             <td>{{$value->eventname}}</td>
-            <td>{{$value->eventtype}}</td>
             <td>{{$value->description}}</td>
             <td>{{$value->eventvenue}}</td>
             <td>{{$value->eventdate}}</td>

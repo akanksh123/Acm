@@ -28,57 +28,30 @@ active
       </div>
       <div class="events">
         <ul>
+          @foreach($events as $event)
           <li>
             <div class="time">
-              <h2>24<br /><span>June</span></h2>
+              {{-- <h2>24<br /><span>June</span></h2> --}}
+            <h2>{{$event->eventdate}}</h2>
             </div>
-            <a href="/event1">
+            <a href="eventInfo/{{ $event->id }}">
               <div class="details">
-                <h3>Event1</h3>
+              <h3>{{$event->eventname}}</h3>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat.
+                  {{$event->description}}
                 </p>
               </div>
             </a>
           </li>
-          <li>
-            <div class="time">
-              <h2>24<br /><span>June</span></h2>
-            </div>
-            <a href="#">
-              <div class="details">
-                <h3>Event1</h3>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat.
-                </p>
-              </div>
-            </a>
-          </li>
-          <li>
-            <div class="time">
-              <h2>24<br /><span>June</span></h2>
-            </div>
-            <a href="#">
-              <div class="details">
-                <h3>Event1</h3>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat.
-                </p>
-              </div>
-            </a>
-          </li>
+          @endforeach
         </ul>
+         
       </div>
+      <div class="paging">
+        {!!$events->links(); !!}
+        </div>
     </section>
+   
 </div>
 
 @endsection

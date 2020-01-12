@@ -17,7 +17,7 @@ use App\Http\Controllers\AdminController;
 Route::get('/', 'RouteController@index');
 Route::get('/team', 'RouteController@team');
 Route::get('/events', 'RouteController@events');
-Route::get('/event1', 'RouteController@event1');
+Route::get('eventInfo/{id}', 'RouteController@eventInfo');
 
 
 
@@ -28,4 +28,5 @@ Auth::routes();
 // Route::post('/register', 'Auth\RegisterController@register')->name('register');
 Route::get('/addevents', 'AdminController@showAddEvents');
 Route::post('/addeventss', 'AdminController@addEvents')->middleware('auth');
-Route::get('/manageevents', 'AdminController@showManageEvents');
+Route::get('/manageevents', 'AdminController@showManageEvents')->middleware('auth');
+Route::post('/deleteevents/{id}', 'admincontroller@deleteevents')->middleware('auth');

@@ -26,7 +26,8 @@ class AdminController extends Controller
 
     public function showManageEvents()
     {
-        return view('/manageevents');
+        $res = Event::all();
+        return view('/manageevents', compact('res'));
     }
 
     public function addEvents(AddEvent $req)
@@ -40,5 +41,19 @@ class AdminController extends Controller
             }
         }
         return redirect('/dashboard')->with('alert', 'Event added successfully !');
+    }
+
+    public function deleteevents($id, Request $request)
+    {
+        $x = Event::findOrFail($id);
+        $delete = Event::where('id', '=', $id)->delete();
+        if ($delete == true) {
+            $request->session()->flash('status', 'success');
+            $request->session()->flash('message', 'Event deleted successfully !');
+        } else {
+            $request->session()->flash('status', 'danger');
+            $request->session()->flash('message', 'An error occurred');
+        }
+        return back();
     }
 }
