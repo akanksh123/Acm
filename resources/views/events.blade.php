@@ -15,18 +15,12 @@ active
 @section('content')
 <div class="container">
 <section class="mysection">
-      <div class="leftbox">
-        <div class="content" >
-          <h1 >
-            Event Conducted
-          </h1>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-          </p>
-        </div>
-      </div>
       <div class="events">
+          <h1 >
+            Events Conducted
+          </h1>
+         
+      
         <ul>
           @foreach($events as $event)
           <li>
@@ -45,9 +39,9 @@ active
           </li>
           @endforeach
         </ul>
-         
+          
       </div>
-      <div class="paging">
+       <div class="paging">
         {!!$events->links(); !!}
         </div>
     </section>

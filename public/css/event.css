@@ -1,115 +1,3 @@
-.mysection {
-    width: 95%;
-    height: 130vh;
-    margin-top: 10%;
-    background-color: white;
-}
-.mysection .leftbox {
-    width: 40%;
-    height: 100%;
-    float: left;
-    padding: 50px;
-    box-sizing: border-box;
-}
-.mysection .leftbox .content {
-    color: #fff;
-    background-color: #399;
-    padding: 40px;
-    transition: 0.5s;
-}
-.mysection .leftbox .content:hover {
-    background: rgb(31, 178, 223);
-}
-.mysection .leftbox .content h1 {
-    margin: 0%;
-    padding: 0;
-    font-size: 50px;
-    text-transform: uppercase;
-}
-.mysection .leftbox .content p {
-    margin: 10px 0 0;
-    padding: 0;
-}
-.mysection .events {
-    width: 50%;
-    height: 100%;
-    position: relative;
-    background: rgb(155, 202, 233);
-    float: right;
-    box-sizing: border-box;
-}
-.mysection .events ul {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    margin: 0;
-    padding: 40px;
-    box-sizing: border-box;
-}
-.mysection .events ul li {
-    list-style: none;
-    background: powderblue;
-    box-sizing: border-box;
-    height: 150px;
-    width: 500px;
-    margin: 15px 0;
-    opacity: 0.8;
-    border: 2px solid rgb(8, 108, 126);
-}
-.mysection .events ul li .time {
-    position: relative;
-    padding: 20px;
-    background: rgb(33, 136, 136);
-    box-sizing: border-box;
-    float: left;
-    width: 30%;
-    height: 100%;
-    text-align: center;
-    transition: 0.5s;
-}
-.mysection .events ul li:hover {
-    opacity: 1;
-}
-.mysection .events ul li:hover .time {
-    background-color: coral;
-}
-.mysection .events ul li .time h2 {
-    position: absolute;
-    margin: 0;
-    padding: 0;
-    top: 33%;
-    left: 30%;
-    color: white;
-    font-size: 50px;
-    line-height: 30px;
-}
-.mysection .events ul li .time h2 span {
-    font-size: 30px;
-}
-.mysection .events ul li .details {
-    padding: 20px;
-    background: #fff;
-    box-sizing: border-box;
-    width: 70%;
-    height: 100%;
-    float: left;
-    color: black;
-}
-.mysection .events ul li .details h3 {
-    position: relative;
-    padding: 0;
-    margin: 0;
-    font-size: 24px;
-}
-.mysection .events ul li .details p {
-    position: relative;
-    margin: 7px 0 0;
-    padding: 0;
-    font-size: 18px;
-}
-.mysection .events ul li a:hover .details {
-    color: black;
-}
 @media screen and (max-width: 1300px) {
     .mysection {
         width: 95%;
@@ -117,25 +5,21 @@
         margin-top: 10%;
         background-color: white;
     }
-    .mysection .leftbox {
-        width: 40%;
-        height: 100%;
-        float: left;
-        padding: 30px;
-        box-sizing: border-box;
-    }
-    .mysection .leftbox .content h1 {
-        margin: 0%;
-        padding: 0;
-        font-size: 30px;
+    .mysection h1 {
+        font-size: 50px;
+        text-align: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        text-decoration: solid;
         text-transform: uppercase;
     }
     .mysection .events {
-        width: 60%;
-        height: 100%;
+        width: 100%;
+        height: 90%;
         position: relative;
         background: rgb(155, 202, 233);
-        float: right;
+
+        padding: 0;
         box-sizing: border-box;
     }
     .mysection .events ul {
@@ -143,16 +27,17 @@
         top: 50%;
         transform: translateY(-50%);
         margin: 0;
-        padding: 20px;
+        padding-left: 27%;
+        padding-top: 40px;
         box-sizing: border-box;
     }
     .mysection .events ul li {
         list-style: none;
         background: powderblue;
         box-sizing: border-box;
-        height: 150px;
+        height: 130px;
         width: 450px;
-        margin: 15px 0;
+        margin: 20px 0;
         opacity: 0.8;
         border: 2px solid rgb(8, 108, 126);
     }
@@ -205,8 +90,16 @@
         padding: 0;
         font-size: 15px;
     }
+    .navbar-default {
+        background-color: rgb(155, 202, 233);
+    }
     .mysection .events ul li a:hover .details {
         color: black;
+    }
+    .mysection .paging {
+        padding-left: 40%;
+        margin-top: 30px;
+        background-color: rgb(155, 202, 233);
     }
 }
 
@@ -217,22 +110,17 @@
         margin-top: 10%;
         background-color: white;
     }
-    .mysection .leftbox {
-        width: 100%;
-        height: 45%;
-
-        padding: 10px;
-        box-sizing: border-box;
-    }
-    .mysection .leftbox .content h1 {
-        margin: 0%;
-        padding: 0;
-        font-size: 30px;
+    .mysection h1 {
+        font-size: 40px;
+        text-align: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        text-decoration: solid;
         text-transform: uppercase;
     }
     .mysection .events {
         width: 100%;
-        height: 60%;
+        height: 90%;
         position: relative;
         background: rgb(155, 202, 233);
         margin-top: 10px;
